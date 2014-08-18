@@ -21,6 +21,7 @@
 		1CBD7BD119A2B7450046EB31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD7BB319A2B7450046EB31 /* UIKit.framework */; };
 		1CBD7BD919A2B7450046EB31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD7BD719A2B7450046EB31 /* InfoPlist.strings */; };
 		1CBD7BDB19A2B7450046EB31 /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD7BDA19A2B7450046EB31 /* Passing_Data_Challenge_SolutionTests.m */; };
+		1CBD7BE619A2B7F10046EB31 /* BWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD7BE519A2B7F10046EB31 /* BWDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1CBD7BD619A2B7450046EB31 /* Passing Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		1CBD7BD819A2B7450046EB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CBD7BDA19A2B7450046EB31 /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		1CBD7BE419A2B7F10046EB31 /* BWDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWDetailViewController.h; sourceTree = "<group>"; };
+		1CBD7BE519A2B7F10046EB31 /* BWDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				1CBD7BC119A2B7450046EB31 /* Main.storyboard */,
 				1CBD7BC419A2B7450046EB31 /* BWViewController.h */,
 				1CBD7BC519A2B7450046EB31 /* BWViewController.m */,
+				1CBD7BE419A2B7F10046EB31 /* BWDetailViewController.h */,
+				1CBD7BE519A2B7F10046EB31 /* BWDetailViewController.m */,
 				1CBD7BC719A2B7450046EB31 /* Images.xcassets */,
 				1CBD7BB619A2B7450046EB31 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			files = (
 				1CBD7BC619A2B7450046EB31 /* BWViewController.m in Sources */,
 				1CBD7BBC19A2B7450046EB31 /* main.m in Sources */,
+				1CBD7BE619A2B7F10046EB31 /* BWDetailViewController.m in Sources */,
 				1CBD7BC019A2B7450046EB31 /* BWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

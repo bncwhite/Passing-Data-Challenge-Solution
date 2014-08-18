@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BWViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "BWViewController.h"
+#import "BWDetailViewController.h"
 
 @interface BWViewController ()
 
@@ -24,6 +25,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UIButton class]]) {
+        if ([segue.destinationViewController isKindOfClass:[BWDetailViewController class]]) {
+            BWDetailViewController *detailVC = [BWDetailViewController new];
+            detailVC = segue.destinationViewController;
+            detailVC.passedData = self.textField.text;
+        }
+    }
 }
 
 @end
