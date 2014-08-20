@@ -34,8 +34,14 @@
             BWDetailViewController *detailVC = [BWDetailViewController new];
             detailVC = segue.destinationViewController;
             detailVC.passedData = self.textField.text;
+            detailVC.delegate = self;
         }
     }
+}
+
+-(void)didUpdateText:(NSString *)text
+{
+    self.textField.text = text;
 }
 
 @end

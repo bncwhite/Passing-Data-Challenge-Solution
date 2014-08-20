@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BWDetailViewController.h"
 
-@interface BWViewController : UIViewController
+@interface BWViewController : UIViewController <BWDetailViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end

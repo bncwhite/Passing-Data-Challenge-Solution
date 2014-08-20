@@ -8,7 +8,7 @@
 
 #import "BWDetailViewController.h"
 
-@interface BWDetailViewController ()
+@interface BWDetailViewController () <UITextFieldDelegate>
 
 @end
 
@@ -28,6 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.label.text = self.passedData;
+    self.textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,4 +48,21 @@
 }
 */
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
+}
+
+- (IBAction)update:(UIButton *)sender
+{
+//    if ([self textFieldShouldReturn:self.textField]) {
+//        self.textField.text = @"";
+//        [self.textField resignFirstResponder];
+//    }
+    
+    self.label.text = self.textField.text;
+    [self.delegate didUpdateText:self.textField.text];
+    self.textField.text = @"";
+}
 @end
